@@ -1,6 +1,9 @@
 #!/usr/bin/perl -w
 use strict;
 use LWP::UserAgent;
+#Quick script for going through DB dumps and determining whether passwords are reused.
+#Currently only facebook for now, will update to include instagram/gmail/w.e else later...
+#Intended purpose is to help analyze privacy impact. I do not encourage malicious use of this script...
 
 our @data; #honestly why even bother passing potentially huge data around functions 
 
